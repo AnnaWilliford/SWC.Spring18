@@ -1,3 +1,19 @@
+Software Carpentry Workshop: Lesson1: Introduction to Python
+===
+
+SWC workshop, February 2018
+Instructor: Balan Ramesh
+Time: 3 hours
+
+---
+Good morning!
+Before we start working with python, let's make a folder where you will save all your work during this workshop.
+
+Let's make a folder `SWC_spring2018` on your Desktop. We will be working with this folder for the next 2 days so it is better if you leave it on the Desktop where it is easily accesible. It also helps for everyone to have the folder in the same location as it will make it easier to navigate to your files when we start using command line interface later today.
+
+- [x] Do it with students and make sure everyone is with you - put up red sticky notes if having problems, green when done with the task. 
+
+
 # Python Introduction
 
 Python is a general purpose programming language that supports rapid development of scripts and applications.
