@@ -317,7 +317,7 @@ type(int(dna))
 
 The small objects can be combined to build larger objects. Look at the gapminder dataset again. Our smallest objects can be used to represent a single element in the dataset, like individual year, or individual country, but what would be the simplest object that you can make with multiple elements?
 
-##### List
+#### List
 
 List is a data structure in python that supports different data types as a single list. Each value in the list is separated by comma (,) and is indexed. Indexing starts from 0.
 
@@ -350,7 +350,7 @@ list[1] = 5.4
 list
 ```
  
-##### Tuple
+#### Tuple
 
 Tuples are similar to list. They can hold different data types as a list of values separated by comma(,).
 
@@ -387,8 +387,10 @@ TypeError                                 Traceback (most recent call last)
 TypeError: 'tuple' object does not support item assignment
 ```
 
-  * Dictionary
-  * Data Frame with Pandas
+#### Dictionary
+
+
+#### Data Frame with Pandas
   
 * Operators
   * "+"
@@ -421,8 +423,3 @@ TypeError: 'tuple' object does not support item assignment
   * Statistics by Grouping using Pandas
   * Quick Summary using Pandas
   * Ploting of Summary using Pandas
-  
-  
-  
-  
-  
