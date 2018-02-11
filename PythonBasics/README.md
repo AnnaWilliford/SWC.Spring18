@@ -1,11 +1,13 @@
 Software Carpentry Workshop: Lesson1: Introduction to Python
 ===
 
+
 SWC workshop, February 2018
 Instructor: Balan Ramesh
 Time: 3 hours
 
 ---
+
 Good morning!
 Before we start working with python, let's make a folder where you will save all your work during this workshop.
 
