@@ -247,19 +247,79 @@ Question mark followed by the name of the module/function provides information a
 pwd
 ```
 
+### Data types and Data structures
 
-Dataset
+Let's assign value of 45 to a variable `age`. We just created the smallest object in R:
 
-Examples and Challenges
+```python
+dna = "ATCGTCAC"
 
-* Variable
+#some useful functions to know more about the object 
+len(dna)
 
-* Data Types
+age = 45
+
+#some useful functions to know more about the object 
+a = str(age)
+```
+
+Variables can hold values of various types. Most common data types:
+
   * Int
   * Float
   * Str
   * Boolean
 
+  
+For example: What data type is stored in `score` variable?
+```python
+score = 79
+type(score)
+type(str(score))
+```
+
+Sometimes you will need to convert between data types. There are functions that do that:  
+  * int()
+  * float()
+  * str()
+  * bool()
+  
+The last expression in the above example of nested function. Nested functions are very common in python, but are very difficult to understand at first. You can always split nested function into a series of single function calls. Remember that the variable inside the most inner paranthesis is an argument(input)for the function that will be evaluated first.
+
+**Challenge 2.1:** Learn how to read the output of nested help functions
+
+```python
+TASK: Break the following expression into multiple single function calls.
+You will need to assign the output of each function to a variable that
+will serve as an input(argument) for the next function. 
+What is the value of each variable? What does each function do? 
+Assign: `score = 79`
+
+type(str(type(float(score))))
+```
+
+The conversion between data types is not always possible - why? Let's see what happens here:
+
+```python
+score = 79
+type(score)
+type(str(score))
+##################
+dna = "TCAGTCGATC"
+type(dna)
+type(int(dna))
+```
+
+:worried::worried::worried:
+> I can understand that the conversion is not possible. I also see a value error. But I dont understand `Why`. Why is it not converting?
+
+  
+* Data Structures
+  * List
+  * Tuple
+  * Dictionary
+  * Data Frame with Pandas
+  
 * Operators
   * "+"
   * "-"
@@ -284,14 +344,6 @@ Examples and Challenges
   * while
   * for
   
-* Data Structures
-  * List
-  * Tuple
-  * Dictionary
-  * Data Frame with Pandas
-  
-* Functions
-
 * About python libraries
 
   * Importing the data using Pandas  
