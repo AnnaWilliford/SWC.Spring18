@@ -24,7 +24,7 @@ When you unzip this file, you should have `Data` folder with `ByCountry` folder 
 
 Finally, let's make another folder called  `Python_basics` inside `SWC_spring2018` folder. This is where we will save all files for this lesson.
 
-:+1: do it with students and make sure everyone is with you - put up red sticky notes if having problems, green when done with the task.
+:+1: Do it with students and make sure everyone is with you - put up red sticky notes if having problems, green when done with the task.
 
 
 Now we are ready to work with Python.
@@ -89,7 +89,7 @@ For this workshop, we will have all our files in `SWC_spring2018`. Navigate `Hom
 
 ![](./Second.png)
 
-:+1: do it with students and make sure everyone is with you - put up red sticky notes if having problems, green when done with the task.
+:+1: Do it with students and make sure everyone is with you - put up red sticky notes if having problems, green when done with the task.
 
 This opens up to the Notebook User Interface (UI). This has three areas.
 
@@ -138,6 +138,114 @@ Symbol `>>>` means that the python is ready for the next command. If you enter i
 Functionality is all the same. But the advantage of Jupyter Notebook is that it helps us write reports using Markdown file and supports in-text code blocks that are executed while rendering to HTML or pdf files.
 
 ![](./Fifth.png)
+
+For this workshop we will be working with Jupyter Notebook. 
+
+:+1: Do it with students and make sure everyone is with you - put up red sticky notes if having problems, green when done with the task.
+
+**Now lets get started**
+
+## 2. Building blocks of Python
+
+Let's work in edit mode in Jupyter from now on so that you will have the record of all commands we used in this lesson.
+
+### Variables/objects
+
+One of the main concepts of any programming language is a notion of a variable. Variables are created to store values for future use.
+To create a variable in python, use `=` as assignment operator:
+
+```python
+a = 5
+print(a)
+DNA = "ACTGATGCTAGC"
+print(DNA)
+```
+
+**Challenge 2.1**
+    
+```python
+=====
+TASK: What will be the value of each  variable  after each statement in the following code?
+=====
+mass = 47.5
+age = 122
+mass = mass * 2.3
+age = age - 20
+height = height + 20      
+```
+
+As you can see, a variable is assigned a value equal to the value of the evaluated expression on the right side of the assignment operator. 
+
+**A note on variable names:**
+* NO SPACES in names
+* DO NOT START with numbers
+* Names should be MEANINGFUL - help yourself and others to understand your code! 
+
+### Working with environment
+
+#### List all variable defined in your environment
+
+```python
+who
+```
+
+#### Delete a specific variable in your environment
+
+```python
+del DNA
+del a
+```
+
+#### To delete all the variables
+
+```python
+reset
+```
+
+### Functions
+
+In general, a function takes an input and transforms it according to the function's definition(rules). You can recognize functions in python by the presence of parantheses. Objects in parantheses are called function's `arguments`.
+
+#### Print is a widely used function
+
+```python
+DNA = "ATGCATGCT"
+print(DNA)
+```
+
+- Here `print()` is a function.
+- `(DNA)` is an argument to the function.
+
+#### To Apply square root function
+
+```python
+import math
+a = 64
+math.sqrt(a)
+sqrt_a = math.sqrt(a)
+print(sqrt_a)
+```
+
+- `math` is the module which has square root function. A module is a collection of several related functions. 
+- `sqrt()` is the function
+- `(a)` is the argument to the function.
+- The square root of the `a` is now assigned to a new variable named `sqrt_a`
+- `print()` function takes `sqrt_a` as argument and displays it to the user.
+
+
+### Help functions
+
+Question mark followed by the name of the module/function provides information about the module.
+
+```python
+?math.sqrt()
+```
+
+### Present directory is given by
+
+```python
+pwd
+```
 
 
 Dataset
