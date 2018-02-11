@@ -2,9 +2,9 @@ Software Carpentry Workshop: Lesson1: Introduction to Python
 ===
 
 
-SWC workshop, February 2018
-Instructor: Balan Ramesh
-Time: 3 hours
+SWC workshop, February 2018  
+Instructor: Balan Ramesh  
+Time: 3 hours  
 
 ---
 
@@ -17,7 +17,7 @@ Let's make a folder `SWC_spring2018` on your Desktop. We will be working with th
 
 Now let's download datasets (Data.zip) for the workshop and put it in `SWC_spring2018` folder.
 
-https://raw.githubusercontent.com/AnnaWilliford/2017-11-11-UTA/gh-pages/workshop/SWC_fall2017/Data.zip
+[Dataset](https://raw.githubusercontent.com/AnnaWilliford/2017-11-11-UTA/gh-pages/workshop/SWC_fall2017/Data.zip)
 
 When you unzip this file, you should have `Data` folder with `ByCountry` folder and `gapminder.txt` file in it.
 
