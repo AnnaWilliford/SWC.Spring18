@@ -44,7 +44,7 @@ Now we are ready to work with Python.
 
 Python is a general purpose programming language that supports rapid development of scripts and applications.
 
-[](https://zgab33vy595fw5zq-zippykid.netdna-ssl.com/wp-content/uploads/2017/09/growth_major_languages-1-1024x878.png)
+![From StackOverflow Blog](https://zgab33vy595fw5zq-zippykid.netdna-ssl.com/wp-content/uploads/2017/09/growth_major_languages-1-1024x878.png)
 
 Python’s main advantages:
 
