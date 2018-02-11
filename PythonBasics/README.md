@@ -82,7 +82,7 @@ Jupyter Notebook opens in your default browser with a list of files and director
 
 ![](./First.png)
 
-For this workshop, we will have all our files in `SWC_spring2018`. Navigate ```Home-->Desktop-->SWC_spring2018-->Python_Basics``` and hit New and click Python 3 to create a new file.
+For this workshop, we will have all our files in `SWC_spring2018`. Navigate `Home-->Desktop-->SWC_spring2018-->Python_Basics` and hit New and click Python 3 to create a new file.
 
 ![](./Second.png)
 
@@ -99,7 +99,7 @@ So if a cell is highlighted in `green`, it means the cell is in `edit mode`. If 
 ### Interpreter Mode
 
 Now let us see how interpreter mode works. Open a new tab in the terminal and type `python3` and hit enter.
-This should open python in interpreter mode with `>>>` as shown.
+This should open python in interpreter mode with ` >>> ` as shown.
 ![](./Third.png)
 
 When you type commands in the terminal/console window and press 'ENTER', they are executed immediately and the output is displayed. Here are few examples:  
@@ -111,7 +111,7 @@ When you type commands in the terminal/console window and press 'ENTER', they ar
             
 ![](./Fourth.png)            
 
-Symbol `>>>` means that the python is ready for the next command. If you enter incomplete commands, python will show SyntaxError or a Nameerror. 
+Symbol ` >>> ` means that the python is ready for the next command. If you enter incomplete commands, python will show SyntaxError or a Nameerror. 
 
 ## IDE for Python vs Interpreter Mode/Scripting Mode
 
