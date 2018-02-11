@@ -329,12 +329,13 @@ type(list)
 ```
  - Notice the use of square brackets.
  
- |list  |= |5 | 6.7 | "Texas" |
- |:-----:--:--:-----:---------|
- |Index |= |0 | 1   |  2      |
- |:-----:--:--:-----:---------|
- |Index |= |-3| -2  |  -1     |
-
+ |list   |= |5 | 6.7 | "Texas" |
+ |:----- |:-|:-|:----|:--------|
+ ||From Left||
+ |Index  |= |0 | 1   |  2      |
+ ||From Right||
+ |Index  |= |-3| -2  |  -1     |
+ 
 ```python
 list = [5,6.7,"Texas"]
 type(list[0])
@@ -363,10 +364,11 @@ type(tuple)
  - Notice the use of simple brackets or parantheses.
  
  |tuple  |= |5 | 6.7 | "Texas" |
- |:-----:--:--:-----:---------|
- |Index |= |0 | 1   |  2      |
- |:-----:--:--:-----:---------|
- |Index |= |-3| -2  |  -1     |
+ |:----- |:-|:-|:----|:--------|
+ ||From Left||
+ |Index  |= |0 | 1   |  2      |
+ ||From Right||
+ |Index  |= |-3| -2  |  -1     |
  
 
 Now if you wanted to change a value say 6.7 to 5.4, you **CANNOT** do that. This property of the tuples makes it `**immutable**`
