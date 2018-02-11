@@ -38,6 +38,22 @@ Now we are ready to work with Python.
 - Understand how to extract parts of the dataset
 - Understand how to write simple Python scripts
 
+Ultimately, by the end of this workshop, you can create your own reports as a Markdown file or HTML file or pdf file to present it to your superiors.
+
+```
+=======================================
+Get reports from whosoever is doing it
+=======================================
+```
+
+You can achieve the following graphs and leave a good impression on your higher officers.
+
+```
+=================================================
+Get visualization graphs from whosoever is doing it
+=================================================
+```
+
 ## Introduction to Python and Jupyter Notebook
 
 ### Why Python ?
@@ -60,24 +76,49 @@ We will be working with Python using Jupyter Notebook. This is a piece of softwa
 
 > How to open jupyter notebook in different platforms !!!
 
-Ultimately, by the end of this workshop, you can create your own reports as a Markdown file or HTML file or pdf file to present it to your superiors.
+Now let's open Jupyter Notebook by typing `jupyter-notebook` in the terminal/console.
 
-```
-=======================================
-Get reports from whosoever is doing it
-=======================================
-```
+Jupyter Notebook opens in your default browser with a list of files and directories in the home directory with this URl `http://localhost:8888/tree`  
 
-You can achieve the following graphs and leave a good impression on your higher officers.
+![](./First.png)
 
-```
-=================================================
-Get visualization graphs from whosoever is doing it
-=================================================
-```
+For this workshop, we will have all our files in `SWC_spring2018`. Navigate `Home-->Desktop-->SWC_spring2018-->Python_Basics` and hit New and click Python 3 to create a new file.
 
-GUI for Python vs Interpreter Mode/Scripting Mode
-aka Jupyter Notebook and Python Interpreter
+![](./Second.png)
+
+- [x] do it with students and make sure everyone is with you - put up red sticky notes if having problems, green when done with the task.
+
+This opens up to the Notebook User Interface (UI). This has three areas.
+
+* Menu 
+* Toolbar
+* Notebook area and cells
+
+So if a cell is highlighted in `green`, it means the cell is in `edit mode`. If the cell is highlighted in `blue`, it means the cell is in `command mode`.
+
+### Interpreter Mode
+
+Now let us see how interpreter mode works. Open a new tab in the terminal and type `python3` and hit enter.
+This should open python in interpreter mode with `>>>` as shown.
+![](./Third.png)
+
+When you type commands in the terminal/console window and press 'ENTER', they are executed immediately and the output is displayed. Here are few examples:  
+
+            >>> 3+5
+            >>> import math
+            >>> math.sqrt(64) 
+            >>> print("Welcome All !!!")
+            
+![](./Fourth.png)            
+
+Symbol `>>>` means that the python is ready for the next command. If you enter incomplete commands, python will show SyntaxError or a Nameerror. 
+
+## IDE for Python vs Interpreter Mode/Scripting Mode
+
+Functionality is all the same. But the advantage of Jupyter Notebook is that it helps us write reports using Markdown file and supports in-text code blocks that are executed while rendering to HTML or pdf files.
+
+![](./Fifth.png)
+
 
 Dataset
 
