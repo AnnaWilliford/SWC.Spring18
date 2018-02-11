@@ -13,7 +13,7 @@ Before we start working with python, let's make a folder where you will save all
 
 Let's make a folder `SWC_spring2018` on your Desktop. We will be working with this folder for the next 2 days so it is better if you leave it on the Desktop where it is easily accesible. It also helps for everyone to have the folder in the same location as it will make it easier to navigate to your files when we start using command line interface later today.
 
-- [x] Do it with students and make sure everyone is with you - put up red sticky notes if having problems, green when done with the task. 
+:+1: Do it with students and make sure everyone is with you - put up red sticky notes if having problems, green when done with the task. 
 
 Now let's download datasets (Data.zip) for the workshop and put it in `SWC_spring2018` folder.
 
@@ -22,9 +22,9 @@ Now let's download datasets (Data.zip) for the workshop and put it in `SWC_sprin
 When you unzip this file, you should have `Data` folder with `ByCountry` folder and `gapminder.txt` file in it.
 
 
-Finally, let's make another folder called  'Python_basics' inside `SWC_spring2018` folder. This is where we will save all files for this lesson.
+Finally, let's make another folder called  ` Python_basics ` inside `SWC_spring2018` folder. This is where we will save all files for this lesson.
 
-- [x] do it with students and make sure everyone is with you - put up red sticky notes if having problems, green when done with the task.
+:+1: do it with students and make sure everyone is with you - put up red sticky notes if having problems, green when done with the task.
 
 
 Now we are ready to work with Python.
@@ -40,14 +40,16 @@ Now we are ready to work with Python.
 
 Ultimately, by the end of this workshop, you can create your own reports as a Markdown file or HTML file or pdf file to present it to your superiors.
 
+:hushed::hushed::hushed:
 ```
 =======================================
 Get reports from whosoever is doing it
 =======================================
 ```
 
-You can achieve the following graphs and leave a good impression on your higher officers.
+You can achieve the following graphs and leave a good impression.
 
+:astonished::astonished::scream:
 ```
 =================================================
 Get visualization graphs from whosoever is doing it
@@ -74,6 +76,7 @@ Python’s main advantages:
 
 We will be working with Python using Jupyter Notebook. This is a piece of software (also known as integrated development environment, IDE ) that makes working in Python much easier. 
 
+:confused::confused::confused:
 > How to open jupyter notebook in different platforms !!!
 
 Now let's open Jupyter Notebook by typing `jupyter-notebook` in the terminal/console.
@@ -86,7 +89,7 @@ For this workshop, we will have all our files in `SWC_spring2018`. Navigate `Hom
 
 ![](./Second.png)
 
-- [x] do it with students and make sure everyone is with you - put up red sticky notes if having problems, green when done with the task.
+:+1: do it with students and make sure everyone is with you - put up red sticky notes if having problems, green when done with the task.
 
 This opens up to the Notebook User Interface (UI). This has three areas.
 
@@ -94,20 +97,37 @@ This opens up to the Notebook User Interface (UI). This has three areas.
 * Toolbar
 * Notebook area and cells
 
-So if a cell is highlighted in `green`, it means the cell is in `edit mode`. If the cell is highlighted in `blue`, it means the cell is in `command mode`.
+So if a cell is highlighted in `green` :green_heart:, it means the cell is in `edit mode`. If the cell is highlighted in `blue` :blue_heart:, it means the cell is in `command mode`.
+ Now let us try the following commands one by one in ` edit mode `. Type `3+5` and hit <kbd>shift</kbd>+<kbd>Enter</kbd>
+
+```python
+            >>> 3+5
+            >>> import math
+            >>> math.sqrt(64) 
+            >>> print("Welcome All !!!")
+```
+
+Similarly, we have interpreter mode in python which opens as follows
+
+:confused::confused::confused:
+> How to open python in different systems
+
 
 ### Interpreter Mode
 
 Now let us see how interpreter mode works. Open a new tab in the terminal and type `python3` and hit enter.
 This should open python in interpreter mode with ` >>> ` as shown.
+
 ![](./Third.png)
 
 When you type commands in the terminal/console window and press 'ENTER', they are executed immediately and the output is displayed. Here are few examples:  
 
+```python
             >>> 3+5
             >>> import math
             >>> math.sqrt(64) 
             >>> print("Welcome All !!!")
+```
             
 ![](./Fourth.png)            
 
