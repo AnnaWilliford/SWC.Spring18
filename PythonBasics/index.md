@@ -22,7 +22,7 @@ Now let's download datasets (Data.zip) for the workshop and put it in `SWC_sprin
 When you unzip this file, you should have `Data` folder with `ByCountry` folder and `gapminder.txt` file in it.
 
 
-Finally, let's make another folder called  ` Python_basics ` inside `SWC_spring2018` folder. This is where we will save all files for this lesson.
+Finally, let's make another folder called  `Python_basics` inside `SWC_spring2018` folder. This is where we will save all files for this lesson.
 
 :+1: do it with students and make sure everyone is with you - put up red sticky notes if having problems, green when done with the task.
 
@@ -98,7 +98,7 @@ This opens up to the Notebook User Interface (UI). This has three areas.
 * Notebook area and cells
 
 So if a cell is highlighted in `green` :green_heart:, it means the cell is in `edit mode`. If the cell is highlighted in `blue` :blue_heart:, it means the cell is in `command mode`.
- Now let us try the following commands one by one in ` edit mode `. Type `3+5` and hit <kbd>shift</kbd>+<kbd>Enter</kbd>
+ Now let us try the following commands one by one in `edit mode`. Type `3+5` and hit <kbd>shift</kbd>+<kbd>Enter</kbd>
 
 ```python
             >>> 3+5
