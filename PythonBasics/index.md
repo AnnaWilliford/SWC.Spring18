@@ -98,7 +98,7 @@ This opens up to the Notebook User Interface (UI). This has three areas.
 * Notebook area and cells
 
 So if a cell is highlighted in `green` :green_heart:, it means the cell is in `edit mode`. If the cell is highlighted in `blue` :blue_heart:, it means the cell is in `command mode`.
- Now let us try the following commands one by one in `edit mode`. Type `3+5` and hit <kbd> shift </kbd> + <kbd> Enter </kbd>
+ Now let us try the following commands one by one in `edit mode`. Type `3+5` and hit <kbd>Shift</kbd>+<kbd>Enter</kbd>
 
 ```python
             >>> 3+5
