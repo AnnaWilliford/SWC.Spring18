@@ -232,7 +232,6 @@ print(sqrt_a)
 - The square root of the `a` is now assigned to a new variable named `sqrt_a`
 - `print()` function takes `sqrt_a` as argument and displays it to the user.
 
-
 ### Help functions
 
 Question mark followed by the name of the module/function provides information about the module.
@@ -286,7 +285,7 @@ Sometimes you will need to convert between data types. There are functions that 
   
 The last expression in the above example of nested function. Nested functions are very common in python, but are very difficult to understand at first. You can always split nested function into a series of single function calls. Remember that the variable inside the most inner paranthesis is an argument(input)for the function that will be evaluated first.
 
-**Challenge 2.1:** Learn how to read the output of nested help functions
+**Challenge 2.1:* Learn how to read the output of nested help functions **
 
 ```python
 TASK: Break the following expression into multiple single function calls.
@@ -313,10 +312,79 @@ type(int(dna))
 :worried::worried::worried:
 > I can understand that the conversion is not possible. I also see a value error. But I dont understand `Why`. Why is it not converting?
 
-  
-* Data Structures
-  * List
-  * Tuple
+
+### Data structures with multiple elements
+
+The small objects can be combined to build larger objects. Look at the gapminder dataset again. Our smallest objects can be used to represent a single element in the dataset, like individual year, or individual country, but what would be the simplest object that you can make with multiple elements?
+
+##### List
+
+List is a data structure in python that supports different data types as a single list. Each value in the list is separated by comma (,) and is indexed. Indexing starts from 0.
+
+For example:
+
+```python
+list = [5,6.7,"Texas"]
+type(list)
+```
+ - Notice the use of square brackets.
+ 
+ |list  |= |5 | 6.7 | "Texas" |
+ |:-----:--:--:-----:---------|
+ |Index |= |0 | 1   |  2      |
+ |:-----:--:--:-----:---------|
+ |Index |= |-3| -2  |  -1     |
+
+```python
+list = [5,6.7,"Texas"]
+type(list[0])
+type(list[1])
+type(list[2])
+```
+Now if you wanted to change a value say 6.7 to 5.4, you can do that. This property of the list is called `**mutable property**`
+
+```python
+list = [5,6.7,"Texas"]
+list[1] = 5.4
+list
+```
+ 
+##### Tuple
+
+Tuples are similar to list. They can hold different data types as a list of values separated by comma(,).
+
+For example:
+
+```python
+tuple = (5,6.7,"Texas")
+type(tuple)
+```
+
+ - Notice the use of simple brackets or parantheses.
+ 
+ |tuple  |= |5 | 6.7 | "Texas" |
+ |:-----:--:--:-----:---------|
+ |Index |= |0 | 1   |  2      |
+ |:-----:--:--:-----:---------|
+ |Index |= |-3| -2  |  -1     |
+ 
+
+Now if you wanted to change a value say 6.7 to 5.4, you **CANNOT** do that. This property of the tuples makes it `**immutable**`
+
+```python
+tuple = (5,6.7,"Texas")
+tuple[1] = 5.4
+```
+
+```
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-91-6b513665c9a0> in <module>()
+----> 1 tuple[1] = 5.4
+
+TypeError: 'tuple' object does not support item assignment
+```
+
   * Dictionary
   * Data Frame with Pandas
   
