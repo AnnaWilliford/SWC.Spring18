@@ -13,10 +13,36 @@ Let's make a folder `SWC_spring2018` on your Desktop. We will be working with th
 
 - [x] Do it with students and make sure everyone is with you - put up red sticky notes if having problems, green when done with the task. 
 
+Now let's download datasets (Data.zip) for the workshop and put it in `SWC_spring2018` folder.
 
-# Python Introduction
+https://raw.githubusercontent.com/AnnaWilliford/2017-11-11-UTA/gh-pages/workshop/SWC_fall2017/Data.zip
+
+When you unzip this file, you should have `Data` folder with `ByCountry` folder and `gapminder.txt` file in it.
+
+
+Finally, let's make another folder called  'Python_basics' inside `SWC_spring2018` folder. This is where we will save all files for this lesson.
+
+- [x] do it with students and make sure everyone is with you - put up red sticky notes if having problems, green when done with the task.
+
+
+Now we are ready to work with Python.
+
+### Learning objectives of this workshop
+
+- Understand benefits of using Python
+- Understand how to work with Jupyter Notebook
+- Understand how to go get data from Excel to Python
+- Understand building blocks of Python language
+- Understand how to extract parts of the dataset
+- Understand how to write simple Python scripts
+
+## Introduction to Python and Jupyter Notebook
+
+### Why Python ?
 
 Python is a general purpose programming language that supports rapid development of scripts and applications.
+
+[](https://zgab33vy595fw5zq-zippykid.netdna-ssl.com/wp-content/uploads/2017/09/growth_major_languages-1-1024x878.png)
 
 Python’s main advantages:
 
@@ -25,6 +51,12 @@ Python’s main advantages:
 * It is a general-purpose programming language
 * Supports multiple programming paradigms
 * Very large community with a rich ecosystem of third-party packages
+
+### Jupyter Notebook as IDE for Python
+
+We will be working with Python using Jupyter Notebook. This is a piece of software (also known as integrated development environment, IDE ) that makes working in Python much easier. 
+
+> How to open jupyter notebook in different platforms !!!
 
 Ultimately, by the end of this workshop, you can create your own reports as a Markdown file or HTML file or pdf file to present it to your superiors.
 
