@@ -82,7 +82,7 @@ Jupyter Notebook opens in your default browser with a list of files and director
 
 ![](./First.png)
 
-For this workshop, we will have all our files in `SWC_spring2018`. Navigate `Home-->Desktop-->SWC_spring2018-->Python_Basics` and hit New and click Python 3 to create a new file.
+For this workshop, we will have all our files in `SWC_spring2018`. Navigate ```Home-->Desktop-->SWC_spring2018-->Python_Basics``` and hit New and click Python 3 to create a new file.
 
 ![](./Second.png)
 
