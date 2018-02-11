@@ -98,7 +98,7 @@ This opens up to the Notebook User Interface (UI). This has three areas.
 * Notebook area and cells
 
 So if a cell is highlighted in `green` :green_heart:, it means the cell is in `edit mode`. If the cell is highlighted in `blue` :blue_heart:, it means the cell is in `command mode`.
- Now let us try the following commands one by one in `edit mode`. Type `3+5` and hit <kbd>shift</kbd>+<kbd>Enter</kbd>
+ Now let us try the following commands one by one in `edit mode`. Type `3+5` and hit <kbd> shift </kbd> + <kbd> Enter </kbd>
 
 ```python
             >>> 3+5
@@ -116,7 +116,7 @@ Similarly, we have interpreter mode in python which opens as follows
 ### Interpreter Mode
 
 Now let us see how interpreter mode works. Open a new tab in the terminal and type `python3` and hit enter.
-This should open python in interpreter mode with ` >>> ` as shown.
+This should open python in interpreter mode with `>>>` as shown.
 
 ![](./Third.png)
 
@@ -131,7 +131,7 @@ When you type commands in the terminal/console window and press 'ENTER', they ar
             
 ![](./Fourth.png)            
 
-Symbol ` >>> ` means that the python is ready for the next command. If you enter incomplete commands, python will show SyntaxError or a Nameerror. 
+Symbol `>>>` means that the python is ready for the next command. If you enter incomplete commands, python will show SyntaxError or a Nameerror. 
 
 ## IDE for Python vs Interpreter Mode/Scripting Mode
 
