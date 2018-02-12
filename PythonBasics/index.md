@@ -246,7 +246,7 @@ Question mark followed by the name of the module/function provides information a
 pwd
 ```
 
-### Data types and Data structures
+## Data types
 
 Let's assign value of 45 to a variable `age`. We just created the smallest object in R:
 
@@ -312,14 +312,151 @@ type(int(dna))
 :worried::worried::worried:
 > I can understand that the conversion is not possible. I also see a value error. But I dont understand `Why`. Why is it not converting?
 
+## Operators
 
-### Data structures with multiple elements
+Now lets move on to different types of operators in python and condition statements. 
+
+### Basic Operators
+
+| S.No. | Operator | Function  
+|:------|:---------|:--------- 
+|1.    |  *       |  Multiplication 
+|2.    |  /       |  Division
+|3.    |  +       |  Addition
+|4.    |  -       |  Subtraction
+|5.    | **       |  Exponentition
+|6.    | %        |  Modulo (Provides the remainder)
+
+```python
+a = 5
+b = 7
+a * b
+a / b
+a + b
+a - b
+a ** b
+a % b
+```
+
+### Comparision Operators
+
+| S.No. | Operator | Function  
+|:------|:---------|:--------- 
+|1.    |  >       |  Greater than
+|2.    |  >=      |  Greater than or equal to
+|3.    |  <       |  Lesser than
+|4.    |  <=      |  Lesser than or equal to
+|5.    |  ==      |  Equal to
+|6.    |  !=      |  Not Equal to
+
+```python
+a = 5
+b = 7
+a > b
+a < b
+a >= b
+a <= b
+a == b
+a != b
+```
+
+## Condition statements:
+
+If, elif and else are condition statements in python. These statements evaluate a condition and depending on whether the condition is true or not, they descend to the commands indented within these statements.
+
+**if and else**
+
+```python
+a = 5
+b = 7
+if a < b:
+  print(a,"is smaller than",b)
+else:
+  print(a,"is greater than",b)
+```
+
+**if, elif and else**
+
+```python
+a = 5
+b = 7
+if a < b:
+  print(a,"is smaller than",b)
+elif a == b:
+  print(a,"is equal to", b)
+else:
+  print (a,"is greater than",b)
+```
+
+- The number of elif statements can be increased.
+- Condition statements should end with a colon.
+- Block of code within these conditions should be indented.
+
+#### Membership Operators
+
+| S.No. | Operator | Function  
+|:------|:---------|:--------- 
+|1.     |   in     | True if it finds a variable in the specified sequence and false otherwise.
+|2.     |   not in | True if it does not finds a variable in the specified sequence and false otherwise.
+
+For example:
+
+```python
+dna= "catgctagtcgangctagtgcngtaNNcgtnnncgatgcta"
+if "n" in dna :
+   nbases=dna.count("n")
+   print("dna sequence has %d undefined bases " % nbases)
+else:
+   print("dna sequence has no undefined bases")
+```
+
+#### Logical Operators
+
+| S.No. | Operator | Function  
+|:------|:---------|:--------- 
+|1.     |   and    | True if both conditions are true
+|2.     |   or     | True if at least one condition is true
+|3.     |   not    | True if condition is false
+
+```python
+dna= "agctgtcatgntacgtgcaNNacgtgcatcnnnn"
+if "n" in dna or "N" in dna:
+   nbases=dna.count("n")+dna.count("N")
+   print("dna sequence has %d undefined bases " % nbases)
+else:
+   print("dna sequence has no undefined bases")
+```
+
+### Looping in Python
+
+#### while loop
+
+The while loop repeats a block of commands/instructions as long as a given condition is True. Each repetition is called an iteration of the loop.
+
+```python
+n = 1
+
+while n < 4:
+	print(n)
+	n = n + 1
+```
+
+#### for loop
+
+The for loop is another way to iterate over a list or over a range of values. A for loop automatically assigns a variable to the current element being iterated on.
+
+```python
+for i in range(1, 11):
+  print(i)
+```
+
+## Data structures 
 
 The small objects can be combined to build larger objects. Look at the gapminder dataset again. Our smallest objects can be used to represent a single element in the dataset, like individual year, or individual country, but what would be the simplest object that you can make with multiple elements?
 
 #### List
 
-List is a data structure in python that supports different data types as a single list. Each value in the list is separated by comma (,) and is indexed. Indexing starts from 0.
+List is a data structure in python that holds different data types as a single list as an ordered sequence. Each value in the list is separated by comma (,) and is indexed. Indexing starts from 0.
 
 For example:
 
@@ -371,7 +508,7 @@ type(tuple)
  |Index  |= |-3| -2  |  -1     |
  
 
-Now if you wanted to change a value say 6.7 to 5.4, you **CANNOT** do that. This property of the tuples makes it `**immutable**`
+Now if you wanted to change a value say 6.7 to 5.4, you **CANNOT** do that. This property of the tuples makes them `**immutable**`
 
 ```python
 tuple = (5,6.7,"Texas")
@@ -389,32 +526,17 @@ TypeError: 'tuple' object does not support item assignment
 
 #### Dictionary
 
+A dictionary is a container that holds pairs of objects - keys and values. Dictionary is not ordered or indexed as lists and tuples. Each value is accessible by its key and key can only be either a string or an integer data type. It can not be a list.
+
+```python
+dictionary = {1:"one",2:"two",3:"three","dna":"atcgatgctagcta","protein":"hyrglkvmhyglma"}
+dictionary["dna"]
+dictionary[3]
+for (key,value) in dictionary.items():
+    print (key,"--->",value)
+```
 
 #### Data Frame with Pandas
-  
-* Operators
-  * "+"
-  * "-"
-  * "*"
-  * "/"
-  * "%"
-  * ">"
-  * ">="
-  * "<"
-  * "<="
-  * "=="
-  * "!="
-  * in
-  * not in
-  
-* Condition Statements
-  * If
-  * Else
-  * Elif
-
-* Looping 
-  * while
-  * for
   
 * About python libraries
 
