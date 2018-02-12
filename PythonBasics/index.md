@@ -538,7 +538,13 @@ for (key,value) in dictionary.items():
 
 #### Data Frame with Pandas
   
-* About python libraries
+One of the best options for working with tabular data in Python is to use the Python Data Analysis Library (a.k.a. Pandas). The Pandas library provides data structures, produces high quality plots with matplotlib and integrates nicely with other libraries that use NumPy (which is another Python library) arrays.
+
+Python doesn’t load all of the libraries available to it by default. We have to add an import statement to our code in order to use library functions. To import a library, we use the syntax `import libraryName`. If we want to give the library a nickname to shorten the command, we can add as nickNameHere. An example of importing the pandas library using the common nickname pd is below.
+
+```python
+import pandas as pd
+```
 
   * Importing the data using Pandas  
   * Viewing our dataframe
