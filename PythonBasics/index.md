@@ -541,17 +541,27 @@ for (key,value) in dictionary.items():
 TASK: Try to create a list named 'myOrder' that contains the 
     following data structures as list elements:
 
--- Element 1 is a character vector of length 4 that 
+-- Element 1 is a str list of length 4 that 
     lists the menu items you ordered from the restaurant: 
     chicken, soup, salad, tea.
 
--- Element 2 is a factor that describes menu items
+-- Element 2 is a str list that describes menu items
     as "liquid" or "solid".
 
--- Element 3 is a vector that records the cost of each menu item:
+-- Element 3 is a int list that records the cost of each menu item:
     4.99, 2.99, 3.29, 1.89.
 
 * Hint: Define your elements first, then create a list with them.
+
+**CHALLENGE 2.2 Answer**
+
+```python
+myOrder=[]
+menuItems = ["chicken", "soup","salad","tea"]
+menuType = ["solid","liquid","solid","liquid"]
+menuCost = [4.99,2.99,3.29,1.89]
+myOrder=[menuItems,menuType,menuCost]
+```
 
 #### Data Frame with Pandas
   
