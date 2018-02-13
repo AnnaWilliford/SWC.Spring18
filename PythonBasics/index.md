@@ -536,6 +536,23 @@ for (key,value) in dictionary.items():
     print (key,"--->",value)
 ```
 
+**CHALLENGE 2.2** 
+
+TASK: Try to create a list named 'myOrder' that contains the 
+    following data structures as list elements:
+
+-- Element 1 is a character vector of length 4 that 
+    lists the menu items you ordered from the restaurant: 
+    chicken, soup, salad, tea.
+
+-- Element 2 is a factor that describes menu items
+    as "liquid" or "solid".
+
+-- Element 3 is a vector that records the cost of each menu item:
+    4.99, 2.99, 3.29, 1.89.
+
+* Hint: Define your elements first, then create a list with them.
+
 #### Data Frame with Pandas
   
 One of the best options for working with tabular data in Python is to use the Python Data Analysis Library (a.k.a. Pandas). The Pandas library provides data structures, produces high quality plots with matplotlib and integrates nicely with other libraries that use NumPy (which is another Python library) arrays.
@@ -546,7 +563,54 @@ Python doesn’t load all of the libraries available to it by default. We have t
 import pandas as pd
 ```
 
-  * Importing the data using Pandas  
+* Let's go back to gapminder dataset. Could you make an informative guess about how this data structure can be represented in python?
+
+* Yes! It is a list of tuples of equal length, or a data frame. Data frames are extremely useful data structures as they represent table-like datasets. Let's look at our myOrder list to see if we can make data frame out of it. Is the list we just made suitable for a data frame? Yes, the elements of the list are vectors of equal size.
+
+Previously we used `list[]` to combine our elements:
+
+```
+d = {'menuItems':["chicken", "soup","salad","tea"],'menuType':["solid","liquid","solid","liquid"],'menuCost':[4.99,2.99,3.29,1.89]}
+myOrder = pd.DataFrame(data=d)
+myOrder
+```
+
+#### Importing the data using Pandas  
+
+```python
+### For tab separated file
+my_file = pd.read_table("gapminder.txt")
+
+### For comma separated file
+my_file = pd.read_csv("gapminder.csv")
+
+### For excel file
+my_file = pd.read_excel("gapminder.xlsx")
+```
+
+Now lets look at the top few lines and last few lines in the df.
+
+```python
+### Read in the first 10 lines of data frame
+file_dataframe = my_file.head(10)
+
+### Read in the last 10 lines of data frame
+file_dataframe = my_file.tail(10)
+```
+
+:hushed::hushed::hushed:
+
+What if you wanted specific set of lines from your data frame?
+
+```python
+my_file.loc[10:15]
+my_file.iloc[10:15]
+```
+
+**loc is label based indexing** or
+**iloc is positional indexing**
+
+  * Grouping
   * Viewing our dataframe
   * Statistics by Grouping using Pandas
   * Quick Summary using Pandas
