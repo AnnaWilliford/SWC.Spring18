@@ -688,6 +688,7 @@ plt.xlabel('Year', fontsize = 16)
 plt.ylabel('Life Expectancy', fontsize = 16)
 pylab.show()
 ```
+![](./Sixth.png)
 
 You might want to save your plot as .png image. This requires only slight modification of our script.
 
@@ -716,13 +717,11 @@ plt.ylabel('Life Expectancy', fontsize = 16)
 plt.savefig("PlotLifwExp.png")
 ```
 
-```
 **Challenge 3.2**  Write your own python script
-```
 Write a script to calculate mean gdpPerCap for African and European countries.
 Try to make a barplot to display your results.
 
-You might need to read help for 'mean' and 'barplot' functions
-?mean
-?barplot
-```
+You might need to read help for 'mean' and 'plot' functions
+mean()
+plot(type ='bar')
+
