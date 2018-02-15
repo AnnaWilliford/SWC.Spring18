@@ -598,6 +598,7 @@ my_file = pd.read_csv("gapminder.csv")
 my_file = pd.read_excel("gapminder.xlsx")
 ```
 
+##### Slicing Rows and Columns using indexing
 Now lets look at the top few lines and last few lines in the df.
 
 ```python
@@ -615,13 +616,113 @@ What if you wanted specific set of lines from your data frame?
 ```python
 my_file.loc[10:15]
 my_file.iloc[10:15]
+
+#### I can specify the columns this way
+my_file.iloc[10:15,2]
 ```
 
 **loc is label based indexing** or
 **iloc is positional indexing**
 
-  * Grouping
-  * Viewing our dataframe
-  * Statistics by Grouping using Pandas
-  * Quick Summary using Pandas
-  * Ploting of Summary using Pandas
+What does this do?
+
+```python
+my_file.iloc[10:15,1:3]
+```
+
+##### Subsetting using a criteria
+
+Now lets try and select the all the rows and columns of "Sweden" only.
+
+```python
+my_file[my_file.country == "Sweden" ]
+```
+
+**Challenge 3.1** Play with gapminder dataset:
+
+```
+TASK: Answer the following questions about `myData` object
+
+1. Can you extract 3rd and 5th column of the dataset?
+2. Can you extract the list of countries in this dataset?
+### Hint: use unique(). ###
+3. Can you get a part of this dataset that includes information about Sweden?
+4. Can you extract all countries for which life expectancy is below 70?
+5. Can you make a new column that contains population in units of millions of people?
+```
+
+**Challenge 3.1** Answers
+
+```
+1. my_file.iloc[:,[2,4]]
+2. my_file.country.unique()
+3. my_file[my_file.country == "Sweden" ]
+4. my_file[my_file.lifeExp < 70]
+5. my_file["PopM"] = pd.Series((my_file.iloc[:,4])/(10^6), index = my_file.index)
+```
+## Writing Simple Scripts in Python
+
+An Python script (or any other script) is a series of commands that are executed in the order they are written. The commands that we have executed one by one in python can be written to a text file and then executed all at once by running the file (which is now an pyhton script). Python scripts usually have .py extensions. Here is an example of a simple python script that will plot life expectancy over years for Canada.
+
+```python
+##This is  PlotLifeExp.py script
+
+#Import pandas and pylab
+import pandas as pd
+import pylab
+
+#read data into python
+my_file = pd.read_table("gapminder.txt")
+
+#my_file is a dataframe - check
+
+#select information about Canada
+Canada = my_file[my_file.country == "Canada"]
+
+#Canada is a new dataframe
+
+#plot lifeExp 
+Canada.plot.line(x='year',y='lifeExp',label = "Life Expectancy",figsize=(8, 6))
+plt.suptitle('Life Expectancy in Canada Over the years', fontsize = 20)
+plt.xlabel('Year', fontsize = 16)
+plt.ylabel('Life Expectancy', fontsize = 16)
+pylab.show()
+```
+
+You might want to save your plot as .png image. This requires only slight modification of our script.
+
+```python
+##This is  PlotLifeExp.py script
+
+#Import pandas and pylab
+import pandas as pd
+import pylab
+
+#read data into python
+my_file = pd.read_table("gapminder.txt")
+
+#my_file is a dataframe - check
+
+#select information about Canada
+Canada = my_file[my_file.country == "Canada"]
+
+#Canada is a new dataframe
+
+#plot lifeExp 
+Canada.plot.line(x='year',y='lifeExp',label = "Life Expectancy",figsize=(8, 6))
+plt.suptitle('Life Expectancy in Canada Over the years', fontsize = 20)
+plt.xlabel('Year', fontsize = 16)
+plt.ylabel('Life Expectancy', fontsize = 16)
+plt.savefig("PlotLifwExp.png")
+```
+
+```
+**Challenge 3.2**  Write your own python script
+```
+Write a script to calculate mean gdpPerCap for African and European countries.
+Try to make a barplot to display your results.
+
+You might need to read help for 'mean' and 'barplot' functions
+?mean
+?barplot
+```
