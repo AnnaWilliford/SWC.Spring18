@@ -758,7 +758,7 @@ fig_size[1] = 8
 plt.rcParams["figure.figsize"] = fig_size
 
 #Plot the graph with Y axis label and Title
-plt.bar(continents,mean_gdp,align='center', alpha=0.5)
+plt.bar(continents,mean_gdp,align='center')
 plt.ylabel('Mean GDP/Capita')
 plt.title('Mean GDP per Capita in Africa Vs Europe')
 pylab.show()
