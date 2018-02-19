@@ -1,7 +1,7 @@
 Software Carpentry Workshop
 ----
 
-Lesson1: Introduction to Python
+Lesson 1: Introduction to Python
 ----  
 
 SWC workshop, February 2018  
