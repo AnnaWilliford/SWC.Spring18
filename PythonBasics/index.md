@@ -728,7 +728,7 @@ You might need to read help for 'mean' and 'plot' functions
 plt.bar()
 
 ```python
-##This is  MeanGdpPlot.R script
+##This is  MeanGdpPlot.py script
 
 #Import pandas and pylab
 import pandas as pd
