@@ -58,9 +58,9 @@ Get visualization graphs from whosoever is doing it
 =================================================
 ```
 
-## Introduction to Python and Jupyter Notebook
+# 1. Introduction to Python and Jupyter Notebook  
 
-### Why Python ?
+## Why Python ?
 
 Python is a general purpose programming language that supports rapid development of scripts and applications.
 
@@ -74,7 +74,7 @@ Python’s main advantages:
 * Supports multiple programming paradigms
 * Very large community with a rich ecosystem of third-party packages
 
-### Jupyter Notebook as IDE for Python
+## Jupyter Notebook as IDE for Python
 
 We will be working with Python using Jupyter Notebook. This is a piece of software (also known as integrated development environment, IDE ) that makes working in Python much easier. 
 
@@ -115,7 +115,7 @@ Similarly, we have interpreter mode in python which opens as follows
 > How to open python in different systems
 
 
-### Interpreter Mode
+## Interpreter Mode
 
 Now let us see how interpreter mode works. Open a new tab in the terminal and type `python3` and hit enter.
 This should open python in interpreter mode with `>>>` as shown.
@@ -147,11 +147,11 @@ For this workshop we will be working with Jupyter Notebook.
 
 **Now lets get started**
 
-## 2. Building blocks of Python
+# 2. Building blocks of Python
 
 Let's work in edit mode in Jupyter from now on so that you will have the record of all commands we used in this lesson.
 
-### Variables/objects
+## Variables/objects
 
 One of the main concepts of any programming language is a notion of a variable. Variables are created to store values for future use.
 To create a variable in python, use `=` as assignment operator:
@@ -204,11 +204,11 @@ del a
 reset
 ```
 
-### Functions
+## Functions
 
 In general, a function takes an input and transforms it according to the function's definition(rules). You can recognize functions in python by the presence of parantheses. Objects in parantheses are called function's `arguments`.
 
-#### Print is a widely used function
+### Print is a widely used function
 
 ```python
 DNA = "ATGCATGCT"
@@ -218,7 +218,7 @@ print(DNA)
 - Here `print()` is a function.
 - `(DNA)` is an argument to the function.
 
-#### To Apply square root function
+### To Apply square root function
 
 ```python
 import math
@@ -248,7 +248,7 @@ Question mark followed by the name of the module/function provides information a
 pwd
 ```
 
-## Data types
+## 3.Data types
 
 Let's assign value of 45 to a variable `age`. We just created the smallest object in R:
 
@@ -314,7 +314,7 @@ type(int(dna))
 :worried::worried::worried:
 > I can understand that the conversion is not possible. I also see a value error. But I dont understand `Why`. Why is it not converting?
 
-## Operators
+## 4. Operators
 
 Now lets move on to different types of operators in python and condition statements. 
 
@@ -362,7 +362,7 @@ a == b
 a != b
 ```
 
-## Condition statements:
+## 5. Condition statements:
 
 If, elif and else are condition statements in python. These statements evaluate a condition and depending on whether the condition is true or not, they descend to the commands indented within these statements.
 
@@ -394,7 +394,7 @@ else:
 - Condition statements should end with a colon.
 - Block of code within these conditions should be indented.
 
-#### Membership Operators
+### Membership Operators
 
 | S.No. | Operator | Function  
 |:------|:---------|:--------- 
@@ -412,7 +412,7 @@ else:
    print("dna sequence has no undefined bases")
 ```
 
-#### Logical Operators
+### Logical Operators
 
 | S.No. | Operator | Function  
 |:------|:---------|:--------- 
@@ -429,9 +429,9 @@ else:
    print("dna sequence has no undefined bases")
 ```
 
-### Looping in Python
+## 6. Looping in Python
 
-#### while loop
+### while loop
 
 The while loop repeats a block of commands/instructions as long as a given condition is True. Each repetition is called an iteration of the loop.
 
@@ -443,7 +443,7 @@ while n < 4:
 	n = n + 1
 ```
 
-#### for loop
+### for loop
 
 The for loop is another way to iterate over a list or over a range of values. A for loop automatically assigns a variable to the current element being iterated on.
 
@@ -452,11 +452,11 @@ for i in range(1, 11):
   print(i)
 ```
 
-## Data structures 
+## 7.Data structures 
 
 The small objects can be combined to build larger objects. Look at the gapminder dataset again. Our smallest objects can be used to represent a single element in the dataset, like individual year, or individual country, but what would be the simplest object that you can make with multiple elements?
 
-#### List
+### List
 
 List is a data structure in python that holds different data types as a single list as an ordered sequence. Each value in the list is separated by comma (,) and is indexed. Indexing starts from 0.
 
@@ -489,7 +489,7 @@ list[1] = 5.4
 list
 ```
  
-#### Tuple
+### Tuple
 
 Tuples are similar to list. They can hold different data types as a list of values separated by comma(,).
 
@@ -526,7 +526,7 @@ TypeError                                 Traceback (most recent call last)
 TypeError: 'tuple' object does not support item assignment
 ```
 
-#### Dictionary
+### Dictionary
 
 A dictionary is a container that holds pairs of objects - keys and values. Dictionary is not ordered or indexed as lists and tuples. Each value is accessible by its key and key can only be either a string or an integer data type. It can not be a list.
 
@@ -565,7 +565,7 @@ menuCost = [4.99,2.99,3.29,1.89]
 myOrder=[menuItems,menuType,menuCost]
 ```
 
-#### Data Frame with Pandas
+## 8.Data Frame with Pandas
   
 One of the best options for working with tabular data in Python is to use the Python Data Analysis Library (a.k.a. Pandas). The Pandas library provides data structures, produces high quality plots with matplotlib and integrates nicely with other libraries that use NumPy (which is another Python library) arrays.
 
@@ -587,7 +587,7 @@ myOrder = pd.DataFrame(data=d)
 myOrder
 ```
 
-#### Importing the data using Pandas  
+### Importing the data using Pandas  
 
 ```python
 ### For tab separated file
@@ -600,7 +600,7 @@ my_file = pd.read_csv("gapminder.csv")
 my_file = pd.read_excel("gapminder.xlsx")
 ```
 
-##### Slicing Rows and Columns using indexing
+#### Slicing Rows and Columns using indexing
 Now lets look at the top few lines and last few lines in the df.
 
 ```python
@@ -632,7 +632,7 @@ What does this do?
 my_file.iloc[10:15,1:3]
 ```
 
-##### Subsetting using a criteria
+#### Subsetting using a criteria
 
 Now lets try and select the all the rows and columns of "Sweden" only.
 
@@ -662,7 +662,7 @@ TASK: Answer the following questions about `myData` object
 4. my_file[my_file.lifeExp < 70]
 5. my_file["PopM"] = pd.Series((my_file.iloc[:,4])/(10^6), index = my_file.index)
 ```
-## Writing Simple Scripts in Python
+## 9.Writing Simple Scripts in Python
 
 An Python script (or any other script) is a series of commands that are executed in the order they are written. The commands that we have executed one by one in python can be written to a text file and then executed all at once by running the file (which is now an pyhton script). Python scripts usually have .py extensions. Here is an example of a simple python script that will plot life expectancy over years for Canada.
 
