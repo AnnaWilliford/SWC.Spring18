@@ -769,9 +769,9 @@ pylab.show()
 
 :white_check_mark: This lesson introduced you to main ideas of programming: variables, functions, data structures and scripts. Now you can write your own simple programs in Python and begin understanding python code written by others. :end:
 
-:soon: Next, we have Reports and Visualization using Python. Using Python Reports our codes,analysis and interpretatin of the result is made possible. They  are created using Markdown format which makes it easier to use and publish.  
+:soon: Next, we have Reports and Visualization. Using Python Reports our codes,analysis,results and interpretation of the results is made possible. They are created in Markdown format which makes it easier to use and publish.  
 
-:soon: Further, Python has numerous packages which makes it possible to create almost any plots for any type for analyis. We had a sneak peek using line plot :chart_with_upwards_trend: and bar plot:bar_chart:. We will learn more about plots in Visualization later in the day.
+:soon: Further, Python has numerous packages which makes it possible to create different kinds plots from various analyses. We had a sneak peek using line plot :chart_with_upwards_trend: and bar plot:bar_chart:. We will learn more about plots in Visualization later in the day.
 
 This is Balan signing off :wave: for Python Basics. Happy Learning :v:  
 
