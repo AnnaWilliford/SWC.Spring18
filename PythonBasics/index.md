@@ -287,7 +287,7 @@ Sometimes you will need to convert between data types. There are functions that 
   
 The last expression in the above example of nested function. Nested functions are very common in python, but are very difficult to understand at first. You can always split nested function into a series of single function calls. Remember that the variable inside the most inner paranthesis is an argument(input)for the function that will be evaluated first.
 
-**Challenge 2.1:* Learn how to read the output of nested help functions **
+**Challenge 2.1: Learn how to read the output of nested help functions** 
 
 ```python
 TASK: Break the following expression into multiple single function calls.
