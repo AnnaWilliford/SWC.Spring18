@@ -1,3 +1,6 @@
+Software Carpentry Workshop
+----
+
 Lesson1: Introduction to Python
 ----  
 
