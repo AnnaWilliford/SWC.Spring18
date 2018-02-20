@@ -608,6 +608,7 @@ plt.bar()
 
 #Import pandas and pylab
 import pandas as pd
+import matplotlib.pyplot as plt      
 import pylab
 
 #read data into python
