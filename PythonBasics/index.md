@@ -78,10 +78,7 @@ Python’s main advantages:
 
 We will be working with Python using Jupyter Notebook. This is a piece of software (also known as integrated development environment, IDE ) that makes working in Python much easier. 
 
-:confused::confused::confused:
-> How to open jupyter notebook in different platforms !!!
-
-Now let's open Jupyter Notebook by typing `jupyter-notebook` in the terminal/console.
+Now let's open Jupyter Notebook by typing `jupyter-notebook`/ `jupyter notebook` in the terminal/console/gitbash/cmd.
 
 Jupyter Notebook opens in your default browser with a list of files and directories in the home directory with this URl `http://localhost:8888/tree`  
 
@@ -99,47 +96,48 @@ This opens up to the Notebook User Interface (UI). This has three areas.
 * Toolbar
 * Notebook area and cells
 
-So if a cell is highlighted in `green` :green_heart:, it means the cell is in `edit mode`. If the cell is highlighted in `blue` :blue_heart:, it means the cell is in `command mode`.
+We can add new cell using the `+` option in tool bar. Using the Edit Menu, delete or merge multiple cells together.
+Now, I will give you few minutes to get used to the GUI.
+
+Now, if a cell is highlighted in `green` :green_heart:, it means the cell is in `edit mode`. Thas is you can add, edit and delete contents of a cell like a normal text editor. But is If the cell is highlighted in `blue` :blue_heart:, it means the cell is in `command mode`. Here you can not add or modify contents of a particular cell, instead, you can work with the notebook as a whole. Its important to know that in command mode, the keys are mapped to different functions like to delete (DD) or merge cells (MM).
+
+
  Now let us try the following commands one by one in `edit mode`. Type `3+5` and hit <kbd>Shift</kbd>+<kbd>Enter</kbd>
 
 ```python
-            >>> 3+5
-            >>> import math
-            >>> math.sqrt(64) 
-            >>> print("Welcome All !!!")
+3+5
+import math
+math.sqrt(64) 
+print("Welcome All !!!")
 ```
 
-Similarly, we have interpreter mode in python which opens as follows
-
-:confused::confused::confused:
-> How to open python in different systems
+Similarly, we can use python shell in interactive mode which opens as follows.
 
 
-## Interpreter Mode
+## Python Shell
 
-Now let us see how interpreter mode works. Open a new tab in the terminal and type `python3` and hit enter.
-This should open python in interpreter mode with `>>>` as shown.
+Now let us use Python shell directly. Open a new tab in the terminal and type `python` and hit enter.
+This should open python in interactive mode with `>>>` as shown.
 
 ![](./Third.png)
 
 When you type commands in the terminal/console window and press 'ENTER', they are executed immediately and the output is displayed. Here are few examples:  
 
 ```python
-            >>> 3+5
-            >>> import math
-            >>> math.sqrt(64) 
-            >>> print("Welcome All !!!")
+3+5
+import math
+math.sqrt(64) 
+print("Welcome All !!!")
 ```
             
 ![](./Fourth.png)            
 
 Symbol `>>>` means that the python is ready for the next command. If you enter incomplete commands, python will show SyntaxError or a Nameerror. 
 
-## IDE for Python vs Interpreter Mode/Scripting Mode
+## IDE for Python vs Interactive/Scripting Mode
 
-Functionality is all the same. But the advantage of Jupyter Notebook is that it helps us write reports using Markdown file and supports in-text code blocks that are executed while rendering to HTML or pdf files.
+Functionality is all the same. But the advantage of Jupyter Notebook is that it helps us combine several cells to one. that essentially is a script. Also, it lets us write reports using Markdown file and supports in-text code blocks that are executed while rendering to HTML or pdf files.
 
-![](./Fifth.png)
 
 For this workshop we will be working with Jupyter Notebook. 
 
@@ -159,7 +157,7 @@ To create a variable in python, use `=` as assignment operator:
 ```python
 a = 5
 print(a)
-DNA = "ACTGATGCTAGC"
+DNA = "ACT"
 print(DNA)
 ```
 
@@ -170,6 +168,7 @@ print(DNA)
 TASK: What will be the value of each  variable  after each statement in the following code?
 =====
 mass = 47.5
+height = 24.5
 age = 122
 mass = mass * 2.3
 age = age - 20
@@ -194,8 +193,8 @@ who
 #### Delete a specific variable in your environment
 
 ```python
-del DNA
-del a
+del(DNA)
+del(a)
 ```
 
 #### To delete all the variables
@@ -211,7 +210,7 @@ In general, a function takes an input and transforms it according to the functio
 ### Print is a widely used function
 
 ```python
-DNA = "ATGCATGCT"
+DNA = "ATG"
 print(DNA)
 ```
 
@@ -234,12 +233,12 @@ print(sqrt_a)
 - The square root of the `a` is now assigned to a new variable named `sqrt_a`
 - `print()` function takes `sqrt_a` as argument and displays it to the user.
 
-### Help functions
+### Help function
 
-Question mark followed by the name of the module/function provides information about the module.
+help() is a very useful function. When help() is applied to a a module, it lists all the functions in the module and provides a brief summary on the utility of each function. When help() is applied to specific function it gives a quick summary of that particular function.
 
 ```python
-?math.sqrt()
+help(math)
 ```
 
 ### Present directory is given by
@@ -250,43 +249,43 @@ pwd
 
 ## 3.Data types
 
-Let's assign value of 45 to a variable `age`. We just created the smallest object in R:
-
-```python
-dna = "ATCGTCAC"
-
-#some useful functions to know more about the object 
-len(dna)
-
-age = 45
-
-#some useful functions to know more about the object 
-a = str(age)
-```
-
-Variables can hold values of various types. Most common data types:
+Variables can hold values of various datatypes. Most common data types are:
 
   * Int
   * Float
   * Str
   * Boolean
 
-  
+Let's assign 45 to a variable `age`. 
+
+```python
+age = 45
+
+#some useful functions to know more about the object 
+a = type(age)
+print(a)
+
+dna = "ATC"
+
+#some useful functions to know more about the object 
+len(dna)
+```
+We just created the smallest object in Python.
+
 For example: What data type is stored in `score` variable?
 ```python
 score = 79
-type(score)
-type(str(score))
+print(type(score))
 ```
+The last expression in the above example of nested function. Nested functions are very common in python, but are very difficult to understand at first. You can always split nested function into a series of single function calls. Remember that the variable inside the most inner paranthesis is an argument(input)for the function that will be evaluated first.
+
 
 Sometimes you will need to convert between data types. There are functions that do that:  
   * int()
   * float()
   * str()
   * bool()
-  
-The last expression in the above example of nested function. Nested functions are very common in python, but are very difficult to understand at first. You can always split nested function into a series of single function calls. Remember that the variable inside the most inner paranthesis is an argument(input)for the function that will be evaluated first.
-
+ 
 **Challenge 2.1: Learn how to read the output of nested help functions** 
 
 ```python
@@ -297,7 +296,7 @@ What is the value of each variable? What does each function do?
 Assign: `score = 79`
 
 type(str(type(float(score))))
-```
+``` 
 
 The conversion between data types is not always possible - why? Let's see what happens here:
 
@@ -311,148 +310,7 @@ type(dna)
 type(int(dna))
 ```
 
-:worried::worried::worried:
-> I can understand that the conversion is not possible. I also see a value error. But I dont understand `Why`. Why is it not converting?
-
-## 4. Operators
-
-Now lets move on to different types of operators in python and condition statements. 
-
-### Basic Operators
-
-| S.No. | Operator | Function  
-|:------|:---------|:--------- 
-|1.    |  *       |  Multiplication 
-|2.    |  /       |  Division
-|3.    |  +       |  Addition
-|4.    |  -       |  Subtraction
-|5.    | **       |  Exponentition
-|6.    | %        |  Modulo (Provides the remainder)
-
-```python
-a = 5
-b = 7
-a * b
-a / b
-a + b
-a - b
-a ** b
-a % b
-```
-
-### Comparision Operators
-
-| S.No. | Operator | Function  
-|:------|:---------|:--------- 
-|1.    |  >       |  Greater than
-|2.    |  >=      |  Greater than or equal to
-|3.    |  <       |  Lesser than
-|4.    |  <=      |  Lesser than or equal to
-|5.    |  ==      |  Equal to
-|6.    |  !=      |  Not Equal to
-
-```python
-a = 5
-b = 7
-a > b
-a < b
-a >= b
-a <= b
-a == b
-a != b
-```
-
-## 5. Condition statements:
-
-If, elif and else are condition statements in python. These statements evaluate a condition and depending on whether the condition is true or not, they descend to the commands indented within these statements.
-
-**if and else**
-
-```python
-a = 5
-b = 7
-if a < b:
-  print(a,"is smaller than",b)
-else:
-  print(a,"is greater than",b)
-```
-
-**if, elif and else**
-
-```python
-a = 5
-b = 7
-if a < b:
-  print(a,"is smaller than",b)
-elif a == b:
-  print(a,"is equal to", b)
-else:
-  print (a,"is greater than",b)
-```
-
-- The number of elif statements can be increased.
-- Condition statements should end with a colon.
-- Block of code within these conditions should be indented.
-
-### Membership Operators
-
-| S.No. | Operator | Function  
-|:------|:---------|:--------- 
-|1.     |   in     | True if it finds a variable in the specified sequence and false otherwise.
-|2.     |   not in | True if it does not finds a variable in the specified sequence and false otherwise.
-
-For example:
-
-```python
-dna= "catgctagtcgangctagtgcngtaNNcgtnnncgatgcta"
-if "n" in dna :
-   nbases=dna.count("n")
-   print("dna sequence has %d undefined bases " % nbases)
-else:
-   print("dna sequence has no undefined bases")
-```
-
-### Logical Operators
-
-| S.No. | Operator | Function  
-|:------|:---------|:--------- 
-|1.     |   and    | True if both conditions are true
-|2.     |   or     | True if at least one condition is true
-|3.     |   not    | True if condition is false
-
-```python
-dna= "agctgtcatgntacgtgcaNNacgtgcatcnnnn"
-if "n" in dna or "N" in dna:
-   nbases=dna.count("n")+dna.count("N")
-   print("dna sequence has %d undefined bases " % nbases)
-else:
-   print("dna sequence has no undefined bases")
-```
-
-## 6. Looping in Python
-
-### while loop
-
-The while loop repeats a block of commands/instructions as long as a given condition is True. Each repetition is called an iteration of the loop.
-
-```python
-n = 1
-
-while n < 4:
-	print(n)
-	n = n + 1
-```
-
-### for loop
-
-The for loop is another way to iterate over a list or over a range of values. A for loop automatically assigns a variable to the current element being iterated on.
-
-```python
-for i in range(1, 11):
-  print(i)
-```
-
-## 7.Data structures 
+# 3.Data structures 
 
 The small objects can be combined to build larger objects. Look at the gapminder dataset again. Our smallest objects can be used to represent a single element in the dataset, like individual year, or individual country, but what would be the simplest object that you can make with multiple elements?
 
@@ -464,7 +322,7 @@ For example:
 
 ```python
 list = [5,6.7,"Texas"]
-type(list)
+print(type(list))
 ```
  - Notice the use of square brackets.
  
@@ -477,16 +335,16 @@ type(list)
  
 ```python
 list = [5,6.7,"Texas"]
-type(list[0])
-type(list[1])
-type(list[2])
+print(type(list[0]))
+print(type(list[1]))
+print(type(list[2]))
 ```
 Now if you wanted to change a value say 6.7 to 5.4, you can do that. This property of the list is called `**mutable property**`
 
 ```python
 list = [5,6.7,"Texas"]
 list[1] = 5.4
-list
+print(list)
 ```
  
 ### Tuple
@@ -497,7 +355,7 @@ For example:
 
 ```python
 tuple = (5,6.7,"Texas")
-type(tuple)
+print(type(tuple))
 ```
 
  - Notice the use of simple brackets or parantheses.
@@ -525,47 +383,37 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: 'tuple' object does not support item assignment
 ```
+But in list, we can do it. Therefore lists are `mutable`.
+
+```python
+list = [5,6.7,"Texas"]
+list[1] = 5.4
+print(list)
+```
 
 ### Dictionary
 
-A dictionary is a container that holds pairs of objects - keys and values. Dictionary is not ordered or indexed as lists and tuples. Each value is accessible by its key and key can only be either a string or an integer data type. It can not be a list.
+A dictionary is a container that holds pairs of objects - keys and values. Each key-value pair is an element of the dictionary separated from the next element by a comma. Dictionary is not ordered or indexed as lists and tuples. Each value is accessible by its key and key can only be either a string or an integer data type. It can not be a list. But values in the list can be a list or a tuple.
 
 ```python
-dictionary = {1:"one",2:"two",3:"three","dna":"atcgatgctagcta","protein":"hyrglkvmhyglma"}
-dictionary["dna"]
-dictionary[3]
+dictionary = {1:"one",2:"two",3:"three","dna":"atc","protein":"hyr"}
+print(dictionary["dna"])
+print(dictionary[3])
 for (key,value) in dictionary.items():
     print (key,"--->",value)
 ```
-
-**CHALLENGE 2.2** 
-
-TASK: Try to create a list named 'myOrder' that contains the 
-    following data structures as list elements:
-
--- Element 1 is a str list of length 4 that 
-    lists the menu items you ordered from the restaurant: 
-    chicken, soup, salad, tea.
-
--- Element 2 is a str list that describes menu items
-    as "liquid" or "solid".
-
--- Element 3 is a int list that records the cost of each menu item:
-    4.99, 2.99, 3.29, 1.89.
-
-* Hint: Define your elements first, then create a list with them.
-
-**CHALLENGE 2.2 Answer**
-
+Now lets practice working with various data types by creating a dictionary.
 ```python
-myOrder=[]
-menuItems = ["chicken", "soup","salad","tea"]
-menuType = ["solid","liquid","solid","liquid"]
-menuCost = [4.99,2.99,3.29,1.89]
-myOrder=[menuItems,menuType,menuCost]
+myOrder = 
+{
+menuItems:["chicken", "soup","salad","tea"],
+menuType : ["solid","liquid","solid","liquid"],
+menuCost : [4.99,2.99,3.29,1.89]
+}
+print(myOrder)
 ```
 
-## 8.Data Frame with Pandas
+## 3.Data Frame with Pandas
   
 One of the best options for working with tabular data in Python is to use the Python Data Analysis Library (a.k.a. Pandas). The Pandas library provides data structures, produces high quality plots with matplotlib and integrates nicely with other libraries that use NumPy (which is another Python library) arrays.
 
@@ -582,17 +430,22 @@ import pandas as pd
 Previously we used `list[]` to combine our elements:
 
 ```
-d = {'menuItems':["chicken", "soup","salad","tea"],'menuType':["solid","liquid","solid","liquid"],'menuCost':[4.99,2.99,3.29,1.89]}
-myOrder = pd.DataFrame(data=d)
+myOrder = {'menuItems':["chicken", "soup","salad","tea"],'menuType':["solid","liquid","solid","liquid"],'menuCost':[4.99,2.99,3.29,1.89]}
+myOrder = pd.DataFrame(data=myOrder)
 myOrder
 ```
 
 ### Importing the data using Pandas  
 
+Let's copy the `gapminder.txt` to the present directory so that the original file is untouched.
+
 ```python
 ### For tab separated file
 my_file = pd.read_table("gapminder.txt")
+```
+Similar to tab-separated file, you can use comma separated file as well as excel file.
 
+```python
 ### For comma separated file
 my_file = pd.read_csv("gapminder.csv")
 
@@ -600,7 +453,8 @@ my_file = pd.read_csv("gapminder.csv")
 my_file = pd.read_excel("gapminder.xlsx")
 ```
 
-#### Slicing Rows and Columns using indexing
+## Subsetting Dataframes
+
 Now lets look at the top few lines and last few lines in the df.
 
 ```python
@@ -613,31 +467,59 @@ file_dataframe = my_file.tail(10)
 
 :hushed::hushed::hushed:
 
-What if you wanted specific set of lines from your data frame?
+There are three main options to achieve the selection and indexing activities in Pandas. They are:
+
+1. Selecting data by indexing (.iloc)
+2. Selecting data by label(.loc)
+3. Selecting data by a conditional statment/logical statements 
+
+### Selecting data by indexing (.iloc)
 
 ```python
-my_file.loc[10:15]
-my_file.iloc[10:15]
+#subset by index: iloc
+#data.iloc[<row selection>, <column selection>]
+print(my_file.iloc[0,2])  #first row, second column
+print(my_file.iloc[:,2])  #all rows, second column
+print(my_file.iloc[0,:])   #output as series - Series is a one-dimensional labeled array, like R's named list?
+print(my_file.iloc[0])     #same as above; can omit column index if want all columns
 
-#### I can specify the columns this way
-my_file.iloc[10:15,2]
+print(my_file.iloc[[0]])  #now dataframe is returned
+
+#selecting multiple rows and columns:
+print(my_file.iloc[0:2,1:3])
+print(my_file.iloc[0:2,3])  #series again
+print(my_file.iloc[0:2,[3]])  #data frame
+print(my_file.iloc[[0,2,3],[1,3]])
+
 ```
 
-**loc is label based indexing** or
-**iloc is positional indexing**
-
-What does this do?
+### Selecting data by label(.loc)
 
 ```python
-my_file.iloc[10:15,1:3]
+#subset by label: 
+#data.loc[<row selection>, <column selection>] 
+#df.set_index("last_name", inplace=True)  #can set index to unique column, or use row numbers as labels
+
+print(my_file.head())
+print(my_file.loc[0:2,['year']])  #note that 0:2 is interpreted as  labels of the index. This use is not an integer position along the index
+print(my_file.loc[:, ['year']])
+print(my_file.loc[:, ['year','pop']])
+print(my_file.loc[0:2,'year'])  #back to series
 ```
-
-#### Subsetting using a criteria
-
-Now lets try and select the all the rows and columns of "Sweden" only.
+### Selecting data by a conditional statment/logical statements 
 
 ```python
-my_file[my_file.country == "Sweden" ]
+#Logical selection
+#data.loc[<row selection>, <column selection>] where row selection is based on logical Pandas series
+#With logical selection, you pass an array or Series of True/False values to the .loc indexer to select the rows where your Series has True values.
+print(my_file.head())
+print(my_file.loc[my_file['country']=="Afghanistan"]) #all columns where country is Afghanistan
+
+ls=my_file['country']=="Afghanistan"  #logical Pandas series with TRUE values for rows where Afghanistan is present
+print(ls.head(13))
+
+#specify columns
+print(my_file.loc[my_file['country']=="Afghanistan",['year', 'pop']])
 ```
 
 **Challenge 3.1** Play with gapminder dataset:
@@ -662,33 +544,30 @@ TASK: Answer the following questions about `myData` object
 4. my_file[my_file.lifeExp < 70]
 5. my_file["PopM"] = pd.Series((my_file.iloc[:,4])/(10^6), index = my_file.index)
 ```
-## 9.Writing Simple Scripts in Python
+## 4.Writing Simple Scripts in Python
 
 An Python script (or any other script) is a series of commands that are executed in the order they are written. The commands that we have executed one by one in python can be written to a text file and then executed all at once by running the file (which is now an pyhton script). Python scripts usually have .py extensions. Here is an example of a simple python script that will plot life expectancy over years for Canada.
 
 ```python
 ##This is  PlotLifeExp.py script
 
-#Import pandas and pylab
 import pandas as pd
-import pylab
+import matplotlib.pyplot as plt
 
 #read data into python
-my_file = pd.read_table("gapminder.txt")
+my_file = pd.read_table("Data/gapminder.txt")
 
 #my_file is a dataframe - check
 
 #select information about Canada
-Canada = my_file[my_file.country == "Canada"]
-
-#Canada is a new dataframe
+Canada = my_file.loc[my_file['country'] == "Canada"]
 
 #plot lifeExp 
 Canada.plot.line(x='year',y='lifeExp',label = "Life Expectancy",figsize=(8, 6))
 plt.suptitle('Life Expectancy in Canada Over the years', fontsize = 20)
 plt.xlabel('Year', fontsize = 16)
 plt.ylabel('Life Expectancy', fontsize = 16)
-pylab.show()
+plt.show()  
 ```
 ![](./Sixth.png)
 
@@ -697,26 +576,23 @@ You might want to save your plot as .png image. This requires only slight modifi
 ```python
 ##This is  PlotLifeExp.py script
 
-#Import pandas and pylab
 import pandas as pd
-import pylab
+import matplotlib.pyplot as plt      
 
 #read data into python
-my_file = pd.read_table("gapminder.txt")
+my_file = pd.read_table("Data/gapminder.txt")
 
 #my_file is a dataframe - check
 
 #select information about Canada
-Canada = my_file[my_file.country == "Canada"]
-
-#Canada is a new dataframe
+Canada = my_file.loc[my_file['country'] == "Canada"] 
 
 #plot lifeExp 
 Canada.plot.line(x='year',y='lifeExp',label = "Life Expectancy",figsize=(8, 6))
 plt.suptitle('Life Expectancy in Canada Over the years', fontsize = 20)
 plt.xlabel('Year', fontsize = 16)
 plt.ylabel('Life Expectancy', fontsize = 16)
-plt.savefig("PlotLifwExp.png")
+plt.savefig("PlotLifwExp.png")   
 ```
 
 **Challenge 3.2**  Write your own python script
