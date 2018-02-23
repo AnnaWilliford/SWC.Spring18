@@ -475,10 +475,28 @@ There are three main options to achieve the selection and indexing activities in
 
 ### Selecting data by indexing (.iloc)
 
+The first method that we will see is the **integer-based location indexing** or **iloc**. The row are numbered from 0 through the end of rows. Similarly for columns, they are numbered from 0 through the end of the column.
+
+So the general syntax is
+
 ```python
-#subset by index: iloc
-#data.iloc[<row selection>, <column selection>]
-print(my_file.iloc[0,2])  #first row, second column
+# For a specific row, column - Here in this case, the subset is a series
+print(dataframe.iloc[row,column])
+
+# For a set of rows and for a set of columns - Here its a dataframe
+print(dataframe.iloc[[<row selection>],[<column selection>]])
+```
+Now, let us subset our gapminder dataset using iloc to understand its functionality better.
+
+If you want to the first row and third column, we would subset using iloc as follows.
+
+```python
+print(my_file.iloc[0,2])  #first row, third column
+```
+
+- Remember the indexing starts from 0.
+
+```python
 print(my_file.iloc[:,2])  #all rows, second column
 print(my_file.iloc[0,:])   #output as series - Series is a one-dimensional labeled array, like R's named list?
 print(my_file.iloc[0])     #same as above; can omit column index if want all columns
