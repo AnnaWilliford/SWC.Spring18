@@ -10,24 +10,32 @@ Time: 3 hours
 
 ---
 
-Good morning!
-Before we start working with python, let's make a folder where you will save all your work during this workshop.
+Good morning! I welcome you all to the workshop once again and I am glad you could make it safe to the workshop in such a rainy weather.
+I am Balan Ramesh. I am a graduate student in Dr. Demuth's lab here in UTA. I am interested in studying Sex chromosome evolution in Tribolium species. I work on whole genome sequences and I use various tools including programming languages Python, Shell and R.
+
+Now before we started with python, I want to decide the pace of my lessons, so that its easy for most you. So, I would like to know how many of you have no programming experience? 
+How many of you have some programming experience?
+
+I can say this workshop will be of immense help to people with no programming experience and for people with some programming experience, I assume the later parts of the workshop will be of great use.
 
 Let's make a folder `SWC_spring2018` on your Desktop. We will be working with this folder for the next 2 days so it is better if you leave it on the Desktop where it is easily accesible. It also helps for everyone to have the folder in the same location as it will make it easier to navigate to your files when we start using command line interface later today.
 
 :+1: Do it with students and make sure everyone is with you - put up red sticky notes if having problems, green when done with the task. 
 
-Now let's download datasets (Data.zip) for the workshop and put it in `SWC_spring2018` folder.
+Now let's download datasets (Data.zip) for the workshop and put it in `SWC_spring2018` folder. You should find the link to the datasets in the etherpad. Its a zip file.
 
 [Dataset](https://raw.githubusercontent.com/AnnaWilliford/2017-11-11-UTA/gh-pages/workshop/SWC_fall2017/Data.zip)
 
 When you unzip this file, you should have `Data` folder with `ByCountry` folder and `gapminder.txt` file in it.
-
-
-Finally, let's make another folder called  `Python_basics` inside `SWC_spring2018` folder. This is where we will save all files for this lesson.
+Make sure to cut or copy this to `SWC_spring2018` folder.
 
 :+1: Do it with students and make sure everyone is with you - put up red sticky notes if having problems, green when done with the task.
 
+Finally, let's make another folder called  `Python_basics` inside `SWC_spring2018` folder. This is where we will save all files for this lesson.
+
+Once you have this folder, let us copy `gapminder.txt` to the `Python_basics folder`.
+
+:+1: Do it with students and make sure everyone is with you - put up red sticky notes if having problems, green when done with the task.
 
 Now we are ready to work with Python.
 
@@ -45,16 +53,16 @@ Ultimately, by the end of this workshop, you can create your own reports as a Ma
 :hushed::hushed::hushed:
 ```
 =======================================
-Get reports from whosoever is doing it
+https://github.com/AnnaWilliford/SWC_Spring2018_lessons/
 =======================================
 ```
 
-You can achieve the following graphs and leave a good impression.
+You can create the following graphs and leave a good impression.
 
 :astonished::astonished::scream:
 ```
 =================================================
-Get visualization graphs from whosoever is doing it
+https://github.com/jeesaugustine/Software-Carpentry-Python/
 =================================================
 ```
 
@@ -78,37 +86,52 @@ Python’s main advantages:
 
 We will be working with Python using Jupyter Notebook. This is a piece of software (also known as integrated development environment, IDE ) that makes working in Python much easier. 
 
-Now let's open Jupyter Notebook by typing `jupyter-notebook`/ `jupyter notebook` in the terminal/console/gitbash/cmd.
+Now let us open our terminal or gitbash and type `cd`. This command takes you to your home directory. We will learn more linux commands later in the day.
+
+Now let us open Jupyter Notebook by typing `jupyter-notebook`/ `jupyter notebook` in the terminal/console/gitbash/cmd.
 
 Jupyter Notebook opens in your default browser with a list of files and directories in the home directory with this URl `http://localhost:8888/tree`  
 
-![](./First.png)
-
 For this workshop, we will have all our files in `SWC_spring2018`. Navigate `Home-->Desktop-->SWC_spring2018-->Python_Basics` and hit New and click Python 3 to create a new file.
 
-![](./Second.png)
+Now remember my path will be slightly different because I want to share my file with you all everytime I save. So I have my files in Dropbox.
 
 :+1: Do it with students and make sure everyone is with you - put up red sticky notes if having problems, green when done with the task.
 
 This opens up to the Notebook User Interface (UI). This has three areas.
 
-* Menu 
+* Menubar 
 * Toolbar
 * Notebook area and cells
 
-We can add new cell using the `+` option in tool bar. Using the Edit Menu, delete or merge multiple cells together.
+We will learn more about these areas and their functions, as we move along. For now, let us get started with some basic math.
+
+> We can add new cell using the `+` option in tool bar. Using the Edit Menu, delete or merge multiple cells together.
 Now, I will give you few minutes to get used to the GUI.
 
-Now, if a cell is highlighted in `green` :green_heart:, it means the cell is in `edit mode`. Thas is you can add, edit and delete contents of a cell like a normal text editor. But is If the cell is highlighted in `blue` :blue_heart:, it means the cell is in `command mode`. Here you can not add or modify contents of a particular cell, instead, you can work with the notebook as a whole. Its important to know that in command mode, the keys are mapped to different functions like to delete (DD) or merge cells (MM).
+> Now, if a cell is highlighted in `green` :green_heart:, it means the cell is in `edit mode`. Thas is you can add, edit and delete contents of a cell like a normal text editor. But is If the cell is highlighted in `blue` :blue_heart:, it means the cell is in `command mode`. Here you can not add or modify contents of a particular cell, instead, you can work with the notebook as a whole. Its important to know that in command mode, the keys are mapped to different functions like to delete (DD) or merge cells (MM).
 
 
  Now let us try the following commands one by one in `edit mode`. Type `3+5` and hit <kbd>Shift</kbd>+<kbd>Enter</kbd>
 
 ```python
 3+5
-import math
-math.sqrt(64) 
 print("Welcome All !!!")
+```
+In general, a function takes an input and transforms it according to the function's definition(rules). You can recognize functions in python by the presence of parantheses. Objects in parantheses are called function's `arguments`.
+
+- Here `print()` is a built-in function. Meaning, the function is loaded in python by default.
+- `"Welcome All"` is an argument to the function.
+
+Now,not all functions are present by default. Depending on the need, several built-in modules/packages are imported to the python.
+
+So whenever you catch me saying module or packages or library, I just mean a collection of different sets of built-in functions. 
+ 
+Now if I want to calculate sqrt of a number, the function to calculate the square root is not present by default. So all we have to do is to import the module which has sqrt function and then apply it.
+
+```
+import math
+math.sqrt(64)
 ```
 
 Similarly, we can use python shell in interactive mode which opens as follows.
@@ -116,28 +139,34 @@ Similarly, we can use python shell in interactive mode which opens as follows.
 
 ## Python Shell
 
-Now let us use Python shell directly. Open a new tab in the terminal and type `python` and hit enter.
+Open a new tab in the terminal and type `python` and hit enter.
 This should open python in interactive mode with `>>>` as shown.
 
-![](./Third.png)
 
 When you type commands in the terminal/console window and press 'ENTER', they are executed immediately and the output is displayed. Here are few examples:  
 
 ```python
 3+5
+print("Welcome All !!!")
 import math
 math.sqrt(64) 
-print("Welcome All !!!")
 ```
-            
-![](./Fourth.png)            
 
 Symbol `>>>` means that the python is ready for the next command. If you enter incomplete commands, python will show SyntaxError or a Nameerror. 
 
+Alright then, now we have Jupyter Notebook as Integrated Development Environment (IDE) and Python Shell in interactive mode.
+# Is is same or is it different?
+
+Not that brings us to the next questions.
+# Do we need jupyter notebook for python programming?
+
 ## IDE for Python vs Interactive/Scripting Mode
 
-Functionality is all the same. But the advantage of Jupyter Notebook is that it helps us combine several cells to one. that essentially is a script. Also, it lets us write reports using Markdown file and supports in-text code blocks that are executed while rendering to HTML or pdf files.
+Functionality is all the same. 
 
+- But the advantage of Jupyter Notebook or any IDE for that matter is that, it integrates the work of a text editor and an interpreter for the language.  
+- Also since it has a Graphical User Interface (GUI), it helps user to navigate the language easier comparing the Python shell. 
+- Further, More importantly, there are other functions and advantages like creating reports, exporting as markdown or pdf file, which we will discuss later during the course of the workshop.
 
 For this workshop we will be working with Jupyter Notebook. 
 
@@ -157,9 +186,13 @@ To create a variable in python, use `=` as assignment operator:
 ```python
 a = 5
 print(a)
+
+## For Characters or words or sentences, referred as strings in python, We enclose the value within double quotes/single quotes.
+
 DNA = "ACT"
 print(DNA)
 ```
+We just created the smallest object in Python.
 
 **Challenge 2.1**
     
@@ -251,11 +284,10 @@ pwd
 
 Variables can hold values of various datatypes. Most common data types are:
 
-  * Int
-  * Float
-  * Str
-  * Boolean
-
+  * int
+  * float
+  * str
+  * bool
 Let's assign 45 to a variable `age`. 
 
 ```python
@@ -266,11 +298,12 @@ a = type(age)
 print(a)
 
 dna = "ATC"
+a = type(dna)
+print(a)
 
 #some useful functions to know more about the object 
 len(dna)
 ```
-We just created the smallest object in Python.
 
 For example: What data type is stored in `score` variable?
 ```python
@@ -284,7 +317,6 @@ Sometimes you will need to convert between data types. There are functions that 
   * int()
   * float()
   * str()
-  * bool()
  
 **Challenge 2.1: Learn how to read the output of nested help functions** 
 
@@ -305,7 +337,7 @@ score = 79
 type(score)
 type(str(score))
 ##################
-dna = "TCAGTCGATC"
+dna = "ATG"
 type(dna)
 type(int(dna))
 ```
@@ -475,7 +507,7 @@ There are three main options to achieve the selection and indexing activities in
 
 ### Selecting data by indexing (.iloc)
 
-The first method that we will see is the **integer-based location indexing** or **iloc**. The row are numbered from 0 through the end of rows. Similarly for columns, they are numbered from 0 through the end of the column.
+The first method that we will see is the **integer-based location indexing** or **iloc**. The rows are numbered from 0 through the end of rows. Similarly for columns, they are numbered from 0 through the end of the column.
 
 So the general syntax is
 
@@ -497,21 +529,34 @@ print(my_file.iloc[0,2])  #first row, third column
 - Remember the indexing starts from 0.
 
 ```python
-print(my_file.iloc[:,2])  #all rows, second column
-print(my_file.iloc[0,:])   #output as series - Series is a one-dimensional labeled array, like R's named list?
-print(my_file.iloc[0])     #same as above; can omit column index if want all columns
+
+#all rows, second column
+print(my_file.iloc[:,2])  
+
+#output as series - Series is a one-dimensional labeled array, like R's named list?
+print(my_file.iloc[0,:])  
+
+#same as above; can omit column index if want all columns
+print(my_file.iloc[0])    
 
 print(my_file.iloc[[0]])  #now dataframe is returned
 
 #selecting multiple rows and columns:
 print(my_file.iloc[0:2,1:3])
-print(my_file.iloc[0:2,3])  #series again
-print(my_file.iloc[0:2,[3]])  #data frame
+
+#series again
+print(my_file.iloc[0:2,3])  
+
+#data frame
+print(my_file.iloc[0:2,[3]])  
 print(my_file.iloc[[0,2,3],[1,3]])
 
 ```
 
 ### Selecting data by label(.loc)
+
+The second method is subsetting dataframes using **label based indexing**. Now, the indexing can be set to a specific column or if we dont set the set, the the row numbers are used as labels by default.
+
 
 ```python
 #subset by label: 
@@ -519,21 +564,32 @@ print(my_file.iloc[[0,2,3],[1,3]])
 #df.set_index("last_name", inplace=True)  #can set index to unique column, or use row numbers as labels
 
 print(my_file.head())
-print(my_file.loc[0:2,['year']])  #note that 0:2 is interpreted as  labels of the index. This use is not an integer position along the index
 print(my_file.loc[:, ['year']])
 print(my_file.loc[:, ['year','pop']])
-print(my_file.loc[0:2,'year'])  #back to series
+
+#note that 0:2 is interpreted as  labels of the index. This use is not an integer position along the index
+print(my_file.loc[0:2,['year']])  
+
+#back to series
+print(my_file.loc[0:2,'year']) 
 ```
+
 ### Selecting data by a conditional statment/logical statements 
+
+The third method is selecting data by using conditional statements. Personally, this is the most useful method among the three. The syntax is similar
 
 ```python
 #Logical selection
 #data.loc[<row selection>, <column selection>] where row selection is based on logical Pandas series
+
 #With logical selection, you pass an array or Series of True/False values to the .loc indexer to select the rows where your Series has True values.
 print(my_file.head())
+
+#all columns where country is Afghanistan
 print(my_file.loc[my_file['country']=="Afghanistan"]) #all columns where country is Afghanistan
 
-ls=my_file['country']=="Afghanistan"  #logical Pandas series with TRUE values for rows where Afghanistan is present
+#logical Pandas series with TRUE values for rows where Afghanistan is present
+ls=my_file['country']=="Afghanistan"  
 print(ls.head(13))
 
 #specify columns
