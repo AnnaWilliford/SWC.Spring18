@@ -13,7 +13,7 @@ Time: 3 hours
 Good morning! I welcome you all to the workshop once again and I am glad you could make it safe to the workshop in such a rainy weather.
 I am Balan Ramesh. I am a graduate student in Dr. Demuth's lab here in UTA. I am interested in studying Sex chromosome evolution in Tribolium species. I work on whole genome sequences and I use various tools including programming languages Python, Shell and R.
 
-Now before we started with python, I want to decide the pace of my lessons, so that its easy for most you. So, I would like to know how many of you have no programming experience? 
+Now before we get started with python, I want to decide the pace of my lessons, so that its easy for most you. So, I would like to know how many of you have no programming experience? 
 How many of you have some programming experience?
 
 I can say this workshop will be of immense help to people with no programming experience and for people with some programming experience, I assume the later parts of the workshop will be of great use.
@@ -280,7 +280,7 @@ help(math)
 pwd
 ```
 
-## 3.Data types
+## Data types
 
 Variables can hold values of various datatypes. Most common data types are:
 
@@ -342,7 +342,7 @@ type(dna)
 type(int(dna))
 ```
 
-# 3.Data structures 
+## Data structures 
 
 The small objects can be combined to build larger objects. Look at the gapminder dataset again. Our smallest objects can be used to represent a single element in the dataset, like individual year, or individual country, but what would be the simplest object that you can make with multiple elements?
 
@@ -445,7 +445,7 @@ menuCost : [4.99,2.99,3.29,1.89]
 print(myOrder)
 ```
 
-## 3.Data Frame with Pandas
+# 3.Data Frame with Pandas
   
 One of the best options for working with tabular data in Python is to use the Python Data Analysis Library (a.k.a. Pandas). The Pandas library provides data structures, produces high quality plots with matplotlib and integrates nicely with other libraries that use NumPy (which is another Python library) arrays.
 
@@ -618,7 +618,7 @@ TASK: Answer the following questions about `myData` object
 4. my_file[my_file.lifeExp < 70]
 5. my_file["PopM"] = pd.Series((my_file.iloc[:,4])/(10^6), index = my_file.index)
 ```
-## 4.Writing Simple Scripts in Python
+# 4.Writing Simple Scripts in Python
 
 An Python script (or any other script) is a series of commands that are executed in the order they are written. The commands that we have executed one by one in python can be written to a text file and then executed all at once by running the file (which is now an pyhton script). Python scripts usually have .py extensions. Here is an example of a simple python script that will plot life expectancy over years for Canada.
 
