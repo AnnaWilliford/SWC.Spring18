@@ -29,13 +29,13 @@ Now let's download datasets (Data.zip) for the workshop and put it in `SWC_sprin
 When you unzip this file, you should have `Data` folder with `ByCountry` folder and `gapminder.txt` file in it.
 Make sure to cut or copy this to `SWC_spring2018` folder.
 
-:+1: Do it with students and make sure everyone is with you - put up red sticky notes if having problems, green when done with the task.
+:+1: 
 
 Finally, let's make another folder called  `Python_basics` inside `SWC_spring2018` folder. This is where we will save all files for this lesson.
 
 Once you have this folder, let us copy `gapminder.txt` to the `Python_basics folder`.
 
-:+1: Do it with students and make sure everyone is with you - put up red sticky notes if having problems, green when done with the task.
+:+1:
 
 Now we are ready to work with Python.
 
@@ -72,8 +72,6 @@ https://github.com/jeesaugustine/Software-Carpentry-Python/
 
 Python is a general purpose programming language that supports rapid development of scripts and applications.
 
-![From StackOverflow Blog](https://zgab33vy595fw5zq-zippykid.netdna-ssl.com/wp-content/uploads/2017/09/growth_major_languages-1-1024x878.png)
-
 Python’s main advantages:
 
 * Open Source software, supported by Python Software Foundation
@@ -84,7 +82,7 @@ Python’s main advantages:
 
 ## Jupyter Notebook as IDE for Python
 
-We will be working with Python using Jupyter Notebook. This is a piece of software (also known as integrated development environment, IDE ) that makes working in Python much easier. 
+We will be working with Python using Jupyter Notebook. This is a piece of software (also known as integrated development environment, IDE) that makes working in Python much easier. 
 
 Now let us open our terminal or gitbash and type `cd`. This command takes you to your home directory. We will learn more linux commands later in the day.
 
@@ -96,7 +94,7 @@ For this workshop, we will have all our files in `SWC_spring2018`. Navigate `Hom
 
 Now remember my path will be slightly different because I want to share my file with you all everytime I save. So I have my files in Dropbox.
 
-:+1: Do it with students and make sure everyone is with you - put up red sticky notes if having problems, green when done with the task.
+:+1: 
 
 This opens up to the Notebook User Interface (UI). This has three areas.
 
@@ -109,8 +107,7 @@ We will learn more about these areas and their functions, as we move along. For 
 > We can add new cell using the `+` option in tool bar. Using the Edit Menu, delete or merge multiple cells together.
 Now, I will give you few minutes to get used to the GUI.
 
-> Now, if a cell is highlighted in `green` :green_heart:, it means the cell is in `edit mode`. Thas is you can add, edit and delete contents of a cell like a normal text editor. But is If the cell is highlighted in `blue` :blue_heart:, it means the cell is in `command mode`. Here you can not add or modify contents of a particular cell, instead, you can work with the notebook as a whole. Its important to know that in command mode, the keys are mapped to different functions like to delete (DD) or merge cells (MM).
-
+> Now, if a cell is highlighted in `green` :green_heart:, it means the cell is in `edit mode`. Thas is you can add, edit and delete contents of a cell like a normal text editor. But is If the cell is highlighted in `blue` :blue_heart:, it means the cell is in `command mode`. Here you can not add or modify contents of a particular cell, instead, you can work with the notebook as a whole. Its important to know that in command mode, the keys are mapped to different functions like to delete (DD) or merge cells (Shift+M).
 
  Now let us try the following commands one by one in `edit mode`. Type `3+5` and hit <kbd>Shift</kbd>+<kbd>Enter</kbd>
 
@@ -155,22 +152,26 @@ math.sqrt(64)
 Symbol `>>>` means that the python is ready for the next command. If you enter incomplete commands, python will show SyntaxError or a Nameerror. 
 
 Alright then, now we have Jupyter Notebook as Integrated Development Environment (IDE) and Python Shell in interactive mode.
-# Is is same or is it different?
 
-Not that brings us to the next questions.
-# Do we need jupyter notebook for python programming?
+**Is it same or is it different?** - Same.
+
+**Do we need jupyter notebook for python programming?** - No, it is not needed.
+
+Now that brings us to the next question.
+
+**Which one should I use?**
 
 ## IDE for Python vs Interactive/Scripting Mode
 
 Functionality is all the same. 
 
 - But the advantage of Jupyter Notebook or any IDE for that matter is that, it integrates the work of a text editor and an interpreter for the language.  
-- Also since it has a Graphical User Interface (GUI), it helps user to navigate the language easier comparing the Python shell. 
+- Also since it has a Graphical User Interface (GUI), it helps user to navigate through files and folders easier comparing the Python shell. 
 - Further, More importantly, there are other functions and advantages like creating reports, exporting as markdown or pdf file, which we will discuss later during the course of the workshop.
 
 For this workshop we will be working with Jupyter Notebook. 
 
-:+1: Do it with students and make sure everyone is with you - put up red sticky notes if having problems, green when done with the task.
+:+1: 
 
 **Now lets get started**
 
@@ -643,7 +644,6 @@ plt.xlabel('Year', fontsize = 16)
 plt.ylabel('Life Expectancy', fontsize = 16)
 plt.show()  
 ```
-![](./Sixth.png)
 
 You might want to save your plot as .png image. This requires only slight modification of our script.
 
@@ -714,7 +714,6 @@ plt.ylabel('Mean GDP/Capita')
 plt.title('Mean GDP per Capita in Africa Vs Europe')
 pylab.show()
 ```
-![](./Seventh.png)
 
 ## Summary
 
