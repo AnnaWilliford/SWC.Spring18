@@ -104,10 +104,10 @@ This opens up to the Notebook User Interface (UI). This has three areas.
 
 We will learn more about these areas and their functions, as we move along. For now, let us get started with some basic math.
 
-> We can add new cell using the `+` option in tool bar. Using the Edit Menu, delete or merge multiple cells together.
+We can add new cell using the `+` option in tool bar. Using the Edit Menu, delete or merge multiple cells together.
 Now, I will give you few minutes to get used to the GUI.
 
-> Now, if a cell is highlighted in `green` :green_heart:, it means the cell is in `edit mode`. Thas is you can add, edit and delete contents of a cell like a normal text editor. But is If the cell is highlighted in `blue` :blue_heart:, it means the cell is in `command mode`. Here you can not add or modify contents of a particular cell, instead, you can work with the notebook as a whole. Its important to know that in command mode, the keys are mapped to different functions like to delete (DD) or merge cells (Shift+M).
+Now, if a cell is highlighted in `green` :green_heart:, it means the cell is in `edit mode`. Thas is you can add, edit and delete contents of a cell like a normal text editor. But is If the cell is highlighted in `blue` :blue_heart:, it means the cell is in `command mode`. Here you can not add or modify contents of a particular cell, instead, you can work with the notebook as a whole. Its important to know that in command mode, the keys are mapped to different functions like to delete (DD) or merge cells (Shift+M).
 
  Now let us try the following commands one by one in `edit mode`. Type `3+5` and hit <kbd>Shift</kbd>+<kbd>Enter</kbd>
 
@@ -357,7 +357,7 @@ For example:
 list = [5,6.7,"Texas"]
 print(type(list))
 ```
- - Notice the use of square brackets.
+>  Notice the use of square brackets.
  
  |list   |= |5 | 6.7 | "Texas" |
  |:----- |:-|:-|:----|:--------|
@@ -391,7 +391,7 @@ tuple = (5,6.7,"Texas")
 print(type(tuple))
 ```
 
- - Notice the use of simple brackets or parantheses.
+> Notice the use of simple brackets or parantheses.
  
  |tuple  |= |5 | 6.7 | "Texas" |
  |:----- |:-|:-|:----|:--------|
@@ -401,7 +401,7 @@ print(type(tuple))
  |Index  |= |-3| -2  |  -1     |
  
 
-Now if you wanted to change a value say 6.7 to 5.4, you **CANNOT** do that. This property of the tuples makes them `**immutable**`
+> Now if you wanted to change a value say 6.7 to 5.4, you **CANNOT** do that. This property of the tuples makes them `**immutable**`
 
 ```python
 tuple = (5,6.7,"Texas")
@@ -416,7 +416,7 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: 'tuple' object does not support item assignment
 ```
-But in list, we can do it. Therefore lists are `mutable`.
+> But in list, we can do it. Therefore lists are `mutable`.
 
 ```python
 list = [5,6.7,"Texas"]
@@ -435,7 +435,10 @@ print(dictionary[3])
 for (key,value) in dictionary.items():
     print (key,"--->",value)
 ```
+> Notive the use of curly brackets
+
 Now lets practice working with various data types by creating a dictionary.
+
 ```python
 myOrder = 
 {
